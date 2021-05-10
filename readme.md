@@ -4,7 +4,7 @@
 ### 依赖库
 
 ```
-implementation 'org.cz.media.player.library:mediaplayer:1.1.1'
+//待上传
 ```
 
 ### 演示程序
