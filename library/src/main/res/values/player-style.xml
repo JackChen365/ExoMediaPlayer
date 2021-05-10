@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="MediaPlayer.Compat.Blue">
+        <!--The different status styles, like buffering or error-->
+        <item name="playerView">@style/MediaPlayerView.Normal</item>
+        <item name="playerControlLayoutBase">@style/PlayerControlLayoutBase.Blue</item>
+        <item name="playerOverrideStyle">true</item>
+    </style>
+
+    <style name="MediaPlayer.Compat.Blue.Mini">
+        <!--The different status styles, like buffering or error-->
+        <item name="playerView">@style/MediaPlayerView.Mini</item>
+        <item name="playerControlLayoutBase">@style/PlayerControlLayoutBase.Blue</item>
+        <item name="playerOverrideStyle">true</item>
+    </style>
+
+    <style name="MediaPlayerView.Normal">
+        <item name="control_layout_id">@layout/media_player_control_normal_layout</item>
+    </style>
+
+    <style name="MediaPlayerView.Mini">
+        <item name="control_layout_id">@layout/media_player_control_mini_layout</item>
+    </style>
+
+    <!-- ===================================================== -->
+    <!--The basic style of media player-->
+    <!-- ===================================================== -->
+    <style name="PlayerControlLayoutBase.Blue">
+        <!--The basic button style-->
+        <item name="playerNextButton">@style/MediaButton.Next.Blue</item>
+        <item name="playerPlayButton">@style/MediaButton.Play.Blue</item>
+        <item name="playerPauseButton">@style/MediaButton.Pause.Blue</item>
+
+        <item name="playerPositionText">@style/PlayerPositionText.Blue</item>
+        <item name="playerTimeBar">@style/DefaultTimeBar.Blue</item>
+        <item name="playerDurationText">@style/PlayerDurationText.Blue</item>
+    </style>
+
+
+    <style name="DefaultTimeBar.Blue">
+        <item name="bar_scrubber">@drawable/player_time_bar_scrubber_blue_drawable</item>
+        <item name="bar_buffered">@drawable/player_time_bar_buffered_blue_drawable</item>
+        <item name="bar_progress">@drawable/player_time_bar_progress_blue_drawable</item>
+        <item name="bar_background">@drawable/player_time_bar_progress_background_blue_drawable</item>
+        <item name="bar_mark_read">@drawable/player_time_bar_mark_read_blue_drawable</item>
+        <item name="bar_mark_unread">@drawable/player_time_bar_mark_unread_blue_drawable</item>
+    </style>
+
+    <!--All about player button-->
+    <style name="MediaButton.Next.Blue">
+        <item name="android:contentDescription">@string/media_controls_next_description</item>
+    </style>
+
+    <style name="MediaButton.Play.Blue">
+        <item name="android:src">@drawable/media_player_button_play</item>
+        <item name="android:contentDescription">@string/media_controls_play_description</item>
+    </style>
+
+    <style name="MediaButton.Pause.Blue">
+        <item name="android:src">@drawable/media_player_button_pause</item>
+        <item name="android:contentDescription">@string/media_controls_pause_description</item>
+    </style>
+
+    <style name="PlayerPositionText.Blue">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="PlayerDurationText.Blue">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+</resources>

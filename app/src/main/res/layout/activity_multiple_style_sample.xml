@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <org.cz.media.player.library.AppCompatMediaPlayerView
+        android:id="@+id/playerView1"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:auto_show="false"
+        app:surface_type="texture_view"
+        app:control_layout_id="@layout/media_player_control_mini_layout" />
+
+    <org.cz.media.player.library.AppCompatMediaPlayerView
+        android:id="@+id/playerView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:theme="@style/MediaPlayer.Compat.Blue"/>
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:layout_margin="12dp"
+        android:textAllCaps="false"
+        android:text="Next"/>
+
+</FrameLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.cz.media.player.sample">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission-sdk-23 android:name="android.permission.INTERNET"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ExoMediaPlayer">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".sample.widget.LoadingSampleActivity" />
+        <activity
+            android:name=".sample.basic.BasicSample1Activity"
+            android:configChanges="keyboardHidden|orientation|screenSize" /> <!-- multiple-scenes -->
+        <activity
+            android:name=".sample.scene.MultipleModeSampleActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name=".sample.scene.OrientationSample1Activity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name=".sample.scene.OrientationSample2Activity" /> <!-- overlay -->
+        <activity
+            android:name=".sample.overlay.ArtworkOverlaySampleActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name=".sample.overlay.GestureDetectOverlaySampleActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" /> <!-- widgets -->
+        <activity
+            android:name=".sample.widget.TimeBarSampleActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name=".sample.widget.MediaControllerSampleActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name=".sample.basic.BasicSample2Activity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name=".sample.widget.ListPopupWindowSampleActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name=".sample.list.MediaPlaylistActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name=".sample.list.MediaPlayRecyclerListActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name=".sample.style.BlueStyleSampleActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name=".sample.style.MultipleStyleSampleActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+
+        <activity
+            android:name=".sample.usage.AudioSampleActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+
+        <activity
+            android:name=".sample.usage.DefaultSampleActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+
+        <activity
+            android:name=".sample.usage.MediaMultipleWindowSampleActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+
+
+    </application>
+
+</manifest>

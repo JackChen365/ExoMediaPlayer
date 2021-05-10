@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="loadingView" format="reference"/>
+    <declare-styleable name="LoadingView" >
+        <attr name="loading_petal" format="reference"/>
+        <attr name="loading_petalSize" format="integer"/>
+        <attr name="loading_startColor" format="color"/>
+        <attr name="loading_endColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="RadioButtonLayout">
+        <attr name="radio_array" format="reference"/>
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.cz.media.player.base.controller.MediaPlayerControlLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--customize the center layout-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_control_panel="center">
+
+        <ImageButton
+            android:id="@id/playerPlayButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            style="?attr/playerPlayButton"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:background="@drawable/player_play_selector"/>
+
+        <ImageButton
+            android:id="@id/playerPauseButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            style="?attr/playerPauseButton"
+            android:visibility="gone"
+            android:background="@drawable/player_play_selector"/>
+
+    </FrameLayout>
+
+    <!--declare the bottom layout-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_control_panel="bottom"
+        android:visibility="visible">
+
+        <org.cz.media.player.base.timebar.DefaultTimeBar
+            android:id="@id/playerTimeBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="?playerTimeBar"/>
+
+    </LinearLayout>
+
+</org.cz.media.player.base.controller.MediaPlayerControlLayout>

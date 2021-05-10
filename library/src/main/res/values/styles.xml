@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MediaPlayer.Compat">
+        <!--The different status styles, like buffering or error-->
+        <item name="playerStatusLayout">@style/MediaPlayerStatusStyle</item>
+    </style>
+
+    <!--    The status style-->
+    <style name="MediaPlayerStatusStyle">
+        <!-- The buffering layout-->
+        <item name="playerBufferingLayoutId">@layout/media_view_frame_simple_buffering_layout</item>
+        <item name="playerBufferingLayout">@style/PlayerBufferingLayoutStyle</item>
+        <!-- The network error layout-->
+        <item name="playerNetworkErrorLayoutId">@layout/media_view_frame_simple_network_error_layout</item>
+        <item name="playerNetworkErrorLayout">@style/PlayerErrorLayoutStyle</item>
+        <!-- The load error layout-->
+        <item name="playerLoadErrorLayoutId">@layout/media_view_frame_simple_load_error_layout</item>
+        <item name="playerLoadErrorLayout">@style/PlayerErrorLayoutStyle</item>
+    </style>
+
+    <style name="PlayerBufferingLayoutStyle" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="PlayerErrorLayoutStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+</resources>

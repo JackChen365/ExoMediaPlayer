@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="error_generic">播放失败</string>
+    <string name="error_querying_decoders">无法获取设备解码器</string>
+    <string name="error_no_secure_decoder">设备没有提供安全编码:<xliff:g id="mime_type">%1$s</xliff:g></string>
+    <string name="error_no_decoder">没有找到解码<xliff:g id="mime_type">%1$s</xliff:g></string>
+    <string name="error_instantiating_decoder">无法初始化解码器:<xliff:g id="decoder_name">%1$s</xliff:g></string>
+
+    <string name="player_network_error_info">抱歉，网络似乎不在状态\n请您检查网络设置</string>
+    <string name="player_load_error_info">当前格式不支持或者文件损坏,请检测后点击重新播放</string>
+    <string name="player_retry">点击重试</string>
+    <string name="player_loading">加载中...</string>
+</resources>

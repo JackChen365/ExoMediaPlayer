@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.cz.media.player.base.controller.MediaPlayerControlLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--declare the top layout-->
+    <View
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        app:layout_control_panel="top"
+        app:layout_control_animation="@style/top_side_animation"
+        android:background="@color/titleBarBackground"/>
+
+    <!--declare the bottom layout-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_control_panel="bottom"
+        android:paddingLeft="12dp"
+        android:paddingTop="6dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="6dp"
+        android:gravity="center"
+        android:background="#B3000000"
+        app:layout_control_animation="@style/bottom_side_animation">
+
+        <ImageView
+            android:id="@id/playerPlayButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="12dp"
+            style="?playerPlayButton"/>
+
+        <ImageView
+            android:id="@id/playerPauseButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="12dp"
+            style="?playerPauseButton"/>
+
+        <TextView
+            android:id="@id/playerPositionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_marginLeft="6dp"
+            style="?playerPositionText"/>
+
+        <org.cz.media.player.base.timebar.DefaultTimeBar
+            android:id="@id/playerTimeBar"
+            android:layout_width="0dp"
+            android:layout_height="26dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"
+            style="?playerTimeBar"/>
+
+        <TextView
+            android:id="@id/playerDurationText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            style="?playerDurationText"/>
+
+        <TextView
+            android:id="@+id/playerSpeedText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            style="?playerDurationText"/>
+
+        <TextView
+            android:id="@+id/playerRevolutionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            style="?playerDurationText"/>
+
+        <ImageView
+            android:id="@+id/playerModeButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="12dp"
+            android:src="@drawable/media_player_button_maximum"/>
+
+    </LinearLayout>
+</org.cz.media.player.base.controller.MediaPlayerControlLayout>

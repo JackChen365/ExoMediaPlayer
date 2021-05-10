@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="playerContentView" type="id"/>
+    <item name="playerShutterView" type="id"/>
+    <item name="playerArtwork" type="id"/>
+    <item name="playerSubtitleView" type="id"/>
+    <item name="playerOverlayView" type="id"/>
+    <item name="playerMenuLayout" type="id"/>
+    <item name="playerControlLayout" type="id"/>
+
+    <item name="controllerLeftLayout" type="id"/>
+    <item name="controllerTopLayout" type="id"/>
+    <item name="controllerRightLayout" type="id"/>
+    <item name="controllerBottomLayout" type="id"/>
+    <item name="controllerCenterLayout" type="id"/>
+    <item name="controllerMaskLayout" type="id"/>
+
+    <item name="playerPlayButton" type="id"/>
+    <item name="playerPauseButton" type="id"/>
+    <item name="playerRewindButton" type="id"/>
+    <item name="playerForwardButton" type="id"/>
+    <item name="playerPrevButton" type="id"/>
+    <item name="playerNextButton" type="id"/>
+    <item name="playerShuffleButton" type="id"/>
+    <item name="playerRepeatToggleButton" type="id"/>
+    <item name="playerDurationText" type="id"/>
+    <item name="playerPositionText" type="id"/>
+    <item name="playerTimeBar" type="id"/>
+
+</resources>

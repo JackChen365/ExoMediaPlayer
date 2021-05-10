@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="playerStatusLayout" format="reference"/>
+
+    <!--    The network error style-->
+    <attr name="playerNetworkErrorLayout" format="reference"/>
+    <attr name="playerNetworkErrorLayoutId" format="reference"/>
+    <!--    The play error style-->
+    <attr name="playerLoadErrorLayout" format="reference"/>
+    <attr name="playerLoadErrorLayoutId" format="reference"/>
+    <!--    The process style-->
+    <attr name="playerBufferingLayout" format="reference"/>
+    <attr name="playerBufferingLayoutId" format="reference"/>
+
+    <declare-styleable name="ProgressStatusView">
+        <attr name="android:orientation"/>
+        <attr name="android:progressDrawable"/>
+        <attr name="progressBackground" format="reference"/>
+        <attr name="android:max"/>
+        <attr name="android:progress"/>
+    </declare-styleable>
+
+    <declare-styleable name="MediaPlayerViewStub">
+        <attr name="android:inflatedId" />
+        <attr name="android:layout"/>
+        <attr name="android:id" />
+    </declare-styleable>
+</resources>

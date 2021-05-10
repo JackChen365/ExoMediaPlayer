@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>表单效果</title>
+    <style type="text/css">
+.body{
+    align:left;
+}
+p {
+    text-align:left;
+    font-size:20px;
+}
+.title{
+    width:480px;
+}
+.input_out{
+    width:360px;
+    height:160px;
+    font-size:20px;
+    border:1px solid #CCC;
+    background-color:#FFF;
+}
+</style>
+</head>
+    <body>
+        <dir class="title" >
+            <p>因为平板或者一些其他设备无法直接分享文本,此处只支持文本.所以在演示App内自建一个HttpServer,通过这个Server,可以方便的传送文本到手机内.</p>
+        </dir>
+        <div style="margin:42px">
+            <p >请输入发送文本信息</p>
+            <p><input id="inp_name" class="input_out" type="text" οnfοcus="this.className='input_on';this.οnmοuseοut=''" οnblur="this.className='input_off';this.οnmοuseοut=function(){this.className='input_out'};" οnmοusemοve="this.className='input_move'" οnmοuseοut="this.className='input_out'" /></p>
+        </div>
+    </body>
+</html>

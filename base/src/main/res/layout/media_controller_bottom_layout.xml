@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_control_animation="@style/bottom_side_animation"
+    android:theme="?playerControlLayoutBase">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="4dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@id/playerPrevButton"
+            style="?attr/playerPreviousButton"/>
+
+        <ImageButton
+            android:id="@id/playerRewindButton"
+            style="?attr/playerRewindButton"/>
+
+        <ImageButton
+            android:id="@id/playerShuffleButton"
+            style="?attr/playerShuffleButton"/>
+
+        <ImageButton
+            android:id="@id/playerRepeatToggleButton"
+            style="?attr/playerRepeatButton"/>
+
+        <ImageButton
+            android:id="@id/playerPlayButton"
+            style="?attr/playerPlayButton"/>
+
+        <ImageButton
+            android:id="@id/playerPauseButton"
+            style="?attr/playerPauseButton"/>
+
+        <ImageButton
+            android:id="@id/playerForwardButton"
+            style="?attr/playerFastForwardButton"/>
+
+        <ImageButton
+            android:id="@id/playerNextButton"
+            style="?attr/playerNextButton"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@id/playerPositionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?playerPositionText"/>
+
+        <org.cz.media.player.base.timebar.DefaultTimeBar
+            android:id="@id/playerTimeBar"
+            android:layout_width="0dp"
+            android:layout_height="26dp"
+            android:layout_weight="1"
+            style="?playerTimeBar"/>
+
+        <TextView
+            android:id="@id/playerDurationText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?playerDurationText"/>
+
+    </LinearLayout>
+
+</LinearLayout>

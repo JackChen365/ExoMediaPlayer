@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.cz.media.player.library.extension.PlayerGestureLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/brightnessLayout"
+        android:layout_width="40dp"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="40dp"
+        android:visibility="gone"
+        android:layout_gravity="center_vertical">
+
+        <org.cz.media.player.library.extension.ProgressStatusView
+            android:id="@+id/brightnessStatusView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:progressBackground="@drawable/progress_background"
+            android:progressDrawable="@drawable/progress_drawable" />
+
+        <ImageView
+            android:id="@+id/brightnessImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/brightness_level_drawable"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/soundLayout"
+        android:layout_width="40dp"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:layout_marginRight="40dp"
+        android:visibility="gone"
+        android:layout_gravity="right|center_vertical">
+
+        <org.cz.media.player.library.extension.ProgressStatusView
+            android:id="@+id/soundStatusView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:progressBackground="@drawable/progress_background"
+            android:progressDrawable="@drawable/progress_drawable" />
+
+        <ImageView
+            android:id="@+id/soundImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sound_level_drawable"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/progressText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:visibility="gone"
+        android:background="@drawable/progress_popup_background"
+        android:textColor="@color/md_white_1000"/>
+
+    <TextView
+        android:id="@+id/accelerateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="48sp"
+        android:padding="16dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:background="@drawable/progress_popup_background"
+        android:textColor="@color/md_white_1000"/>
+
+
+</org.cz.media.player.library.extension.PlayerGestureLayout>

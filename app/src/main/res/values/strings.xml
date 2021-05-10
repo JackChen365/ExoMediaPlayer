@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">ExoMediaPlayer</string>
+    <string name="pull_loading">正在加载</string>
+    <string name="permission_denied">申请权限被拒绝</string>
+
+    <string name="fill_screen">全屏显示</string>
+    <string name="normal_screen">标准显示</string>
+    <string-array name="mediaSourceArray" tools:ignore="ExtraTranslation">
+        <item>Url</item>
+        <item>Disk</item>
+        <item>Assets</item>
+    </string-array>
+
+    <string name="player_traffic_warning">即将消耗流量</string>
+    <string name="play_hint">是否播放以下路径</string>
+    <string name="invalid_file_path">无效的播放路径</string>
+    <string name="transfer">交换数据</string>
+    <string name="share">分享</string>
+    <string name="push_message_hint">文本保存到本地服务内部,请自行抓取</string>
+    <string name="restore_position_hint">检测到你上次播放到:%s 是否自动跳转?</string>
+</resources>

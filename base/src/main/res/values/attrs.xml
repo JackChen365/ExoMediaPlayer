@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="mediaPlayer" format="reference"/>
+
+    <attr name="playerView" format="reference"/>
+    <attr name="playerControlLayout" format="reference"/>
+    <attr name="playerAnimationControlLayout" format="reference"/>
+    <attr name="playerControlLayoutBase" format="reference"/>
+
+    <attr name="playerTimeBar" format="reference"/>
+    <!--Determine whether the default style or not-->
+    <attr name="playerOverrideStyle" format="boolean"/>
+
+    <!-- Must be kept in sync with AspectRatioFrameLayout -->
+    <attr name="resize_mode" format="enum">
+        <enum name="fit" value="0"/>
+        <enum name="fixed_width" value="1"/>
+        <enum name="fixed_height" value="2"/>
+        <enum name="fill" value="3"/>
+        <enum name="zoom" value="4"/>
+    </attr>
+    <!-- Must be kept in sync with PlayerView -->
+    <attr name="surface_type" format="enum">
+        <enum name="none" value="0"/>
+        <enum name="surface_view" value="1"/>
+        <enum name="texture_view" value="2"/>
+    </attr>
+
+    <!-- Must be kept in sync with RepeatModeUtil -->
+    <attr name="player_repeat_toggle_modes">
+        <flag name="none" value="0"/>
+        <flag name="one" value="1"/>
+        <flag name="all" value="2"/>
+    </attr>
+
+    <!-- PlayerControlView attributes -->
+    <attr name="player_rewind_increment" format="integer"/>
+    <attr name="player_forward_increment" format="integer"/>
+    <attr name="player_show_shuffle_button" format="boolean"/>
+    <attr name="player_time_bar_min_update_interval" format="integer"/>
+    <attr name="player_button_enabled_alpha" format="float"/>
+    <attr name="player_button_disabled_alpha" format="float"/>
+
+    <declare-styleable name="MediaPlayerView">
+        <attr name="use_controller" format="boolean"/>
+        <attr name="controller_touch_mode" format="enum">
+            <enum name="auto_hide" value="0x00"/>
+            <enum name="click_toggle" value="0x01"/>
+            <enum name="none" value="0x02"/>
+        </attr>
+        <attr name="hide_during_ads" format="boolean"/>
+        <attr name="auto_show" format="boolean"/>
+        <attr name="show_buffering" format="enum">
+            <enum name="never" value="0"/>
+            <enum name="when_playing" value="1"/>
+            <enum name="always" value="2"/>
+        </attr>
+        <attr name="keep_content_on_player_reset" format="boolean"/>
+        <attr name="player_layout_id" format="reference"/>
+        <attr name="control_layout_id" format="reference"/>
+        <attr name="surface_type"/>
+        <attr name="resize_mode"/>
+        <attr name="android:layout"/>
+        <!--media player control layout-->
+    </declare-styleable>
+
+    <declare-styleable name="AspectRatioFrameLayout">
+        <attr name="resize_mode"/>
+    </declare-styleable>
+
+
+    <!-- DefaultTimeBar attributes -->
+    <attr name="bar_buffered" format="reference"/>
+    <attr name="bar_scrubber" format="reference"/>
+    <attr name="bar_progress" format="reference"/>
+    <attr name="bar_disabled" format="reference"/>
+    <attr name="bar_background" format="reference"/>
+    <attr name="bar_mark_read" format="reference"/>
+    <attr name="bar_mark_unread" format="reference"/>
+    <attr name="bar_press_scale" format="float"/>
+
+    <declare-styleable name="DefaultTimeBar">
+        <attr name="bar_scrubber"/>
+        <attr name="bar_buffered"/>
+        <attr name="bar_progress"/>
+        <attr name="bar_disabled"/>
+        <attr name="bar_background"/>
+        <attr name="bar_mark_read"/>
+        <attr name="bar_mark_unread"/>
+        <attr name="bar_press_scale"/>
+    </declare-styleable>
+
+
+    <!-- MediaPlayerControllerLayout attributes -->
+
+    <declare-styleable name="SimpleConstraintLayout_Layout">
+        <attr format="reference|enum" name="layout_controller_left_toLeftOf">
+            <enum name="parent" value="0"/>
+        </attr>
+        <attr format="reference|enum" name="layout_controller_left_toRightOf">
+            <enum name="parent" value="0"/>
+        </attr>
+        <attr format="reference|enum" name="layout_controller_right_toLeftOf">
+            <enum name="parent" value="0"/>
+        </attr>
+        <attr format="reference|enum" name="layout_controller_right_toRightOf">
+            <enum name="parent" value="0"/>
+        </attr>
+        <attr format="reference|enum" name="layout_controller_top_toBottomOf">
+            <enum name="parent" value="0"/>
+        </attr>
+        <attr format="reference|enum" name="layout_controller_top_toTopOf">
+            <enum name="parent" value="0"/>
+        </attr>
+        <attr format="reference|enum" name="layout_controller_bottom_toBottomOf">
+            <enum name="parent" value="0"/>
+        </attr>
+        <attr format="reference|enum" name="layout_controller_bottom_toTopOf">
+            <enum name="parent" value="0"/>
+        </attr>
+    </declare-styleable>
+
+
+    <attr name="control_show_timeout" format="integer"/>
+    <attr name="control_left_layout" format="reference"/>
+    <attr name="control_top_layout" format="reference"/>
+    <attr name="control_right_layout" format="reference"/>
+    <attr name="control_bottom_layout" format="reference"/>
+    <attr name="control_center_layout" format="reference"/>
+    <attr name="layout_control_animation" format="reference"/>
+
+    <declare-styleable name="AnimationControlLayout">
+        <attr name="control_left_layout"/>
+        <attr name="control_top_layout"/>
+        <attr name="control_right_layout"/>
+        <attr name="control_bottom_layout"/>
+        <attr name="control_center_layout"/>
+        <attr name="control_show_timeout"/>
+    </declare-styleable>
+
+    <declare-styleable name="ControlLayoutAnimation">
+        <attr name="android:windowEnterAnimation"/>
+        <attr name="android:windowExitAnimation"/>
+    </declare-styleable>
+
+    <attr name="layout_control_panel" format="enum">
+        <enum name="left" value="0x00"/>
+        <enum name="top" value="0x01"/>
+        <enum name="right" value="0x02"/>
+        <enum name="bottom" value="0x03"/>
+        <enum name="center" value="0x04"/>
+    </attr>
+    <attr name="playerControllerLayout_layout" format="reference"/>
+    <declare-styleable name="PlayerControllerLayout_layout">
+        <attr name="layout_control_animation"/>
+        <attr name="layout_control_panel"/>
+    </declare-styleable>
+
+    <declare-styleable name="MediaPlayerControlLayout">
+        <attr name="player_rewind_increment"/>
+        <attr name="player_forward_increment"/>
+        <attr name="player_repeat_toggle_modes"/>
+        <attr name="player_show_shuffle_button"/>
+        <attr name="player_time_bar_min_update_interval"/>
+        <attr name="player_button_enabled_alpha"/>
+        <attr name="player_button_disabled_alpha"/>
+    </declare-styleable>
+
+
+    <!--The style of shuffle button-->
+    <attr name="playerShuffleButton" format="reference"/>
+    <attr name="playerShuffleButtonOn" format="reference"/>
+    <attr name="playerShuffleButtonOff" format="reference"/>
+
+    <declare-styleable name="PlayerShuffleButton">
+        <attr name="playerShuffleButtonOn"/>
+        <attr name="playerShuffleButtonOff"/>
+    </declare-styleable>
+
+    <!--the style of RepeatButton-->
+    <attr name="playerRepeatButton" format="reference"/>
+    <attr name="playerRepeatButtonOff" format="reference"/>
+    <attr name="playerRepeatButtonOne" format="reference"/>
+    <attr name="playerRepeatButtonAll" format="reference"/>
+
+    <declare-styleable name="PlayerRepeatButton">
+        <attr name="playerRepeatButtonOff"/>
+        <attr name="playerRepeatButtonOne"/>
+        <attr name="playerRepeatButtonAll"/>
+    </declare-styleable>
+
+    <!--The basic button style-->
+    <attr name="playerPreviousButton" format="reference"/>
+    <attr name="playerNextButton" format="reference"/>
+    <attr name="playerFastForwardButton" format="reference"/>
+    <attr name="playerRewindButton" format="reference"/>
+    <attr name="playerPlayButton" format="reference"/>
+    <attr name="playerPauseButton" format="reference"/>
+
+    <attr name="playerPositionText" format="reference"/>
+    <attr name="playerDurationText" format="reference"/>
+
+</resources>

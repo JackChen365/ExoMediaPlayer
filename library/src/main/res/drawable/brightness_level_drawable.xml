@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@mipmap/md_brightness_low" android:minLevel="0" android:maxLevel="20"/>
+    <item android:drawable="@mipmap/md_brightness_medium" android:minLevel="20" android:maxLevel="60"/>
+    <item android:drawable="@mipmap/md_brightness_high" android:minLevel="61" android:maxLevel="100"/>
+</level-list>

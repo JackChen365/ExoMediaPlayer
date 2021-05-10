@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MediaPlayer">
+        <!--The default MediaPlayerView style-->
+        <item name="playerView">@style/MediaPlayerView</item>
+        <!--The default control layout-->
+        <item name="playerControlLayout">@style/MediaPlayerControlLayout</item>
+        <!--The default animation layout-->
+        <item name="playerAnimationControlLayout">@style/PlayerAnimationControlLayout</item>
+        <!--The default child view's animation style in animation layout-->
+        <item name="playerControllerLayout_layout">@style/PlayerControllerLayout_layout</item>
+        <!--All the children inside the control layout-->
+        <item name="playerControlLayoutBase">@style/PlayerControlLayoutBase</item>
+    </style>
+
+    <!--The default MediaPlayerView style-->
+    <style name="MediaPlayerView">
+        <item name="use_controller">true</item>
+        <item name="controller_touch_mode">auto_hide</item>
+        <item name="auto_show">true</item>
+        <item name="show_buffering">always</item>
+        <item name="keep_content_on_player_reset">true</item>
+        <item name="surface_type">surface_view</item>
+        <item name="player_layout_id">@layout/media_simple_player_view</item>
+        <item name="resize_mode">fit</item>
+    </style>
+
+    <style name="PlayerControlLayoutBase">
+        <!--The basic button style-->
+        <item name="playerShuffleButton">@style/MediaButton.ShuffleOn</item>
+        <item name="playerShuffleButtonOn">@style/MediaButton.ShuffleOn</item>
+        <item name="playerShuffleButtonOff">@style/MediaButton.ShuffleOff</item>
+
+        <item name="playerRepeatButton">@style/MediaButton.RepeatOne</item>
+        <item name="playerRepeatButtonOff">@style/MediaButton.RepeatOff</item>
+        <item name="playerRepeatButtonOne">@style/MediaButton.RepeatOne</item>
+        <item name="playerRepeatButtonAll">@style/MediaButton.RepeatAll</item>
+
+        <item name="playerPreviousButton">@style/MediaButton.Previous</item>
+        <item name="playerNextButton">@style/MediaButton.Next</item>
+        <item name="playerFastForwardButton">@style/MediaButton.FastForward</item>
+        <item name="playerRewindButton">@style/MediaButton.Rewind</item>
+        <item name="playerPlayButton">@style/MediaButton.Play</item>
+        <item name="playerPauseButton">@style/MediaButton.Pause</item>
+
+        <item name="playerPositionText">@style/PlayerPositionText</item>
+        <item name="playerTimeBar">@style/DefaultTimeBar</item>
+        <item name="playerDurationText">@style/PlayerDurationText</item>
+    </style>
+
+
+    <style name="DefaultTimeBar">
+        <item name="bar_scrubber">@drawable/player_time_bar_scrubber_drawable</item>
+        <item name="bar_buffered">@drawable/player_time_bar_buffered_drawable</item>
+        <item name="bar_progress">@drawable/player_time_bar_progress_drawable</item>
+        <item name="bar_background">@drawable/player_time_bar_progress_background_drawable</item>
+        <item name="bar_mark_read">@drawable/player_time_bar_mark_read_drawable</item>
+        <item name="bar_mark_unread">@drawable/player_time_bar_mark_unread_drawable</item>
+        <item name="bar_press_scale">1.2</item>
+    </style>
+
+    <style name="left_side_animation">
+        <item name="android:windowEnterAnimation">@anim/left_enter_animation</item>
+        <item name="android:windowExitAnimation">@anim/left_exit_animation</item>
+    </style>
+
+    <style name="top_side_animation">
+        <item name="android:windowEnterAnimation">@anim/top_enter_animation</item>
+        <item name="android:windowExitAnimation">@anim/top_exit_animation</item>
+    </style>
+
+    <style name="right_side_animation">
+        <item name="android:windowEnterAnimation">@anim/right_enter_animation</item>
+        <item name="android:windowExitAnimation">@anim/right_exit_animation</item>
+    </style>
+
+    <style name="bottom_side_animation">
+        <item name="android:windowEnterAnimation">@anim/bottom_enter_animation</item>
+        <item name="android:windowExitAnimation">@anim/bottom_exit_animation</item>
+    </style>
+
+    <style name="default_animation">
+        <item name="android:windowEnterAnimation">@anim/default_enter_animation</item>
+        <item name="android:windowExitAnimation">@anim/default_exit_animation</item>
+    </style>
+
+    <style name="PlayerAnimationControlLayout">
+        <item name="control_show_timeout">15000</item>
+        <item name="control_left_layout">@layout/media_controller_left_layout</item>
+        <item name="control_top_layout">@layout/media_controller_top_layout</item>
+        <item name="control_right_layout">@layout/media_controller_right_layout</item>
+        <item name="control_bottom_layout">@layout/media_controller_bottom_layout</item>
+        <item name="control_center_layout">@layout/media_controller_center_placeholder_layout</item>
+    </style>
+
+    <style name="PlayerControllerLayout_layout">
+        <item name="layout_control_animation">@style/default_animation</item>
+    </style>
+
+    <style name="MediaPlayerControlLayout">
+        <item name="player_rewind_increment">5000</item>
+        <item name="player_forward_increment">5000</item>
+        <item name="player_repeat_toggle_modes">none</item>
+        <item name="player_show_shuffle_button">false</item>
+        <item name="player_button_enabled_alpha">1</item>
+        <item name="player_button_disabled_alpha">0.3</item>
+        <item name="player_time_bar_min_update_interval">200</item>
+    </style>
+
+    <!--All about player button-->
+    <style name="MediaButton">
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+    </style>
+
+    <style name="MediaButton.ShuffleOn">
+        <item name="android:src">@drawable/media_icon_shuffle_on</item>
+        <item name="android:contentDescription">@string/media_controls_shuffle_on_description</item>
+    </style>
+
+    <style name="MediaButton.ShuffleOff">
+        <item name="android:src">@drawable/media_icon_shuffle_off</item>
+        <item name="android:contentDescription">@string/media_controls_shuffle_off_description</item>
+    </style>
+
+    <style name="MediaButton.RepeatOff">
+        <item name="android:src">@drawable/media_icon_repeat_off</item>
+        <item name="android:contentDescription">@string/media_controls_repeat_off_description</item>
+    </style>
+
+    <style name="MediaButton.RepeatOne">
+        <item name="android:src">@drawable/media_icon_repeat_one</item>
+        <item name="android:contentDescription">@string/media_controls_repeat_one_description</item>
+    </style>
+
+    <style name="MediaButton.RepeatAll">
+        <item name="android:src">@drawable/media_icon_repeat_all</item>
+        <item name="android:contentDescription">@string/media_controls_repeat_all_description</item>
+    </style>
+
+    <style name="MediaButton.Previous">
+        <item name="android:src">@drawable/media_icon_previous</item>
+        <item name="android:contentDescription">@string/media_controls_previous_description</item>
+    </style>
+
+    <style name="MediaButton.Next">
+        <item name="android:src">@drawable/media_icon_next</item>
+        <item name="android:contentDescription">@string/media_controls_next_description</item>
+    </style>
+
+    <style name="MediaButton.FastForward">
+        <item name="android:src">@drawable/media_icon_fastforward</item>
+        <item name="android:contentDescription">@string/media_controls_fastforward_description</item>
+    </style>
+
+    <style name="MediaButton.Rewind">
+        <item name="android:src">@drawable/media_icon_rewind</item>
+        <item name="android:contentDescription">@string/media_controls_rewind_description</item>
+    </style>
+
+    <style name="MediaButton.Play">
+        <item name="android:src">@drawable/media_icon_play</item>
+        <item name="android:contentDescription">@string/media_controls_play_description</item>
+    </style>
+
+    <style name="MediaButton.Pause">
+        <item name="android:src">@drawable/media_icon_pause</item>
+        <item name="android:contentDescription">@string/media_controls_pause_description</item>
+    </style>
+
+    <style name="PlayerControlLayout">
+        <item name="android:background">#CC000000</item>
+    </style>
+
+    <style name="PlayerPositionText">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">#FFBEBEBE</item>
+    </style>
+
+    <style name="PlayerDurationText">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">#FFBEBEBE</item>
+    </style>
+
+</resources>

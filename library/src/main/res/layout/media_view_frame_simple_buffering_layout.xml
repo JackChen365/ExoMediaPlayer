@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/progressContainer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="32dp"
+        android:paddingTop="22dp"
+        android:paddingRight="32dp"
+        android:paddingBottom="22dp"
+        android:gravity="center"
+        android:background="@drawable/progress_popup_background">
+
+        <org.cz.media.player.library.status.LoadingView
+            android:id="@+id/imageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/player_loading_anim"/>
+
+        <TextView
+            android:id="@+id/playerBufferingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="12dp"
+            android:text="@string/player_loading"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+</FrameLayout>
